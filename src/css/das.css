@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 body {
-    background-image: url('/proyectoH/src/images/photos/fondo.webp'); 
+    background-image: url('src/images/photos/fondo.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
