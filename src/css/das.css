@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    background-image: url('/proyectoH/src/images/photos/fondo.webp'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    position: relative;
+    top: auto;
+    margin: 270px auto 0;
+    width: 650px;
+    height: 60px;
+    background-color: pink;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around; /* Distribuye los elementos */
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C39BD3;
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #b3a6b1;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+}
+
+/* Ajustando los tamaños y posiciones de los botones */
+a:nth-child(1) {
+    width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+    width: 100px;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 100px;
+}
+nav .start-carta,
+a:nth-child(2):hover ~ .animation {
+    width: 100px;
+    left: 90px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+nav .start-promos,
+a:nth-child(3):hover ~ .animation {
+    width: 100px;
+    left: 200px;
+}
+
+a:nth-child(4) {
+    width: 120px;
+}
+nav .start-reservas,
+a:nth-child(4):hover ~ .animation {
+    width: 120px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+nav .start-galeria,
+a:nth-child(5):hover ~ .animation {
+    width: 120px;
+    left: 420px;
+}
+a:nth-child(6) {
+    width: 120px;
+}
+nav .start-contacto,
+a:nth-child(6):hover ~ .animation {
+    width: 120px;
+    left: 530px;
+}
+
+
+p.texto-footer {
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contenido {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal para el contenido */
+.main-container {
+    max-width: 1200px; /* Ancho máximo del recuadro */
+    margin: 20px auto; /* Centra horizontalmente y agrega margen superior/inferior */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar el recuadro */
+    padding: 20px; /* Espaciado interno */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Ajustes para el contenido dentro del recuadro */
+.main-content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.titulo-bienvenida {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.mapa {
+    margin: 20px 0; /* Espaciado superior e inferior */
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra para el mapa */
+    border-radius: 10px; /* Bordes redondeados para el mapa */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A235A;
+    color: #FFFFFF;
+}
