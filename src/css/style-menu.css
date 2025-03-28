@@ -39,7 +39,7 @@ body {
             border-radius: 8px;
             transition: all 0.5s ease 0s;
         }
-        
+
         
         a:nth-child(1) {
             width: 100px;
@@ -162,3 +162,25 @@ body {
             font-weight: bold;
             color: #4A235A; /* Morado oscuro */
         }
+
+/* Estilo original de la segunda barra de navegación */
+#navbar-platos {
+    position: relative; /* Posición original */
+    background-color: pink; /* Morado oscuro con transparencia */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo cuando la barra se fija al hacer scroll */
+#navbar-platos.sticky {
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 60px; /* Debajo de la primera barra de navegación */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: pink; /* Más transparente al hacer scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
