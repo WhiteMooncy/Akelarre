@@ -5,6 +5,89 @@
             padding: 0;
             background-image: url('../images/photos/fondo-menu.jpg');
         }
+        nav {
+            position: relative;
+            margin: 270px auto 0;
+            width: 650px;
+            height: 60px;
+            background-color: pink;
+            border-radius: 8px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-around; 
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #C39BD3;
+        }
+        
+        nav .animation {
+            position: absolute;
+            height: 5px;
+            bottom: 0;
+            z-index: 0;
+            background: #b3a6b1;
+            border-radius: 8px;
+            transition: all 0.5s ease 0s;
+        }
+        
+        
+        a:nth-child(1) {
+            width: 100px;
+        }
+        nav .start-home,
+        a:nth-child(1):hover ~ .animation {
+            width: 100px;
+            left: 0;
+        }
+        
+        a:nth-child(2) {
+            width: 100px;
+        }
+        nav .start-carta,
+        a:nth-child(2):hover ~ .animation {
+            width: 100px;
+            left: 90px;
+        }
+        
+        a:nth-child(3) {
+            width: 100px;
+        }
+        nav .start-promos,
+        a:nth-child(3):hover ~ .animation {
+            width: 100px;
+            left: 200px;
+        }
+        
+        a:nth-child(4) {
+            width: 120px;
+        }
+        nav .start-reservas,
+        a:nth-child(4):hover ~ .animation {
+            width: 120px;
+        }
+        
+        a:nth-child(5) {
+            width: 120px;
+        }
+        nav .start-galeria,
+        a:nth-child(5):hover ~ .animation {
+            width: 120px;
+            left: 420px;
+        }
+        a:nth-child(6) {
+            width: 120px;
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -42,3 +125,13 @@
             font-weight: bold;
             color: #27ae60;
         }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4A235A;
+            color: #FFFFFF;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        
