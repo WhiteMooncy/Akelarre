@@ -29,4 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
             navbarPlatos.classList.remove('sticky'); // Quitar clase sticky
         }
     });
+
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelector('.carousel-images');
+        const totalSlides = slides.children.length;
+
+        // Actualiza el índice de la diapositiva actual
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+        // Mueve las imágenes
+        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
 });

@@ -1,0 +1,303 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    position: relative;
+    margin: 0.3rem auto 0;
+    width: 650px;
+    height: 60px;
+    background-color: pink;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav {
+    position: relative;
+    top: auto;
+    margin: 0.3rem auto 0;
+    width: 650px;
+    height: 60px;
+    background-color: pink;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C39BD3;
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #b3a6b1;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+}
+
+
+a:nth-child(1) {
+    width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+    width: 100px;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 100px;
+}
+nav .start-carta,
+a:nth-child(2):hover ~ .animation {
+    width: 90px;
+    left: 90px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+nav .start-promos,
+a:nth-child(3):hover ~ .animation {
+    width: 100px;
+    left: 180px;
+}
+
+a:nth-child(4) {
+    width: 120px;
+}
+nav .start-reservas,
+a:nth-child(4):hover ~ .animation {
+    width: 120px;
+    left: 280px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+nav .start-galeria,
+a:nth-child(5):hover ~ .animation {
+    width: 120px;
+    left: 380px;
+}
+a:nth-child(6) {
+    width: 120px;
+}
+nav .start-contacto,
+a:nth-child(6):hover ~ .animation {
+    width: 150px;
+    left: 500px;
+}
+nav a:hover {
+    color: #C39BD3;
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #b3a6b1;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #333;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.item-info {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.item-info h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.item-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4A235A;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A235A;
+    color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos de la segunda barra de navegación */
+#navbar-platos {
+    position: relative;
+    background-color: pink;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#navbar-platos.sticky {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background-color: pink;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+.carousel {
+    position: relative;
+    width: 100%; /* El carrusel ocupa todo el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo del carrusel */
+    height: 400px; /* Altura fija del carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta las imágenes que no están visibles */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave entre imágenes */
+    height: 100%; /* Asegura que las imágenes ocupen todo el alto del carrusel */
+}
+
+.carousel-images img,
+.carousel-images blockquote.instagram-media {
+    width: 100%; /* La imagen o el embed ocupa todo el ancho del carrusel */
+    height: 100%; /* La imagen o el embed ocupa todo el alto del carrusel */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio sin deformarse */
+    flex-shrink: 0; /* Asegura que las imágenes no se reduzcan */
+}
+.instagram-embed {
+    margin: 20px auto; 
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px; /* Botón izquierdo */
+}
+
+.carousel-button.next {
+    right: 10px; /* Botón derecho */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el cursor */
+}
+.mapa {
+    margin: 20px auto; 
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
